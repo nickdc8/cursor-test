@@ -27,12 +27,12 @@ const posts = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
       <SideNav />
       <div className="pl-16">
-        <div className="max-w-5xl mx-auto grid grid-cols-3 gap-8 p-8">
+        <div className="mx-auto max-w-5xl grid grid-cols-3 gap-8 p-8">
           <div className="col-span-2">
-            <div className="bg-white rounded-2xl border p-6">
+            <div className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-6">
               {posts.map((post, index) => (
                 <Post 
                   key={index}
