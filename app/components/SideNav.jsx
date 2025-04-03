@@ -15,6 +15,7 @@ import {
   Bookmark
 } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
+import Logo from './Logo';
 
 export default function SideNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,8 +45,10 @@ export default function SideNav() {
   return (
     <>
       <div className="fixed left-0 top-0 flex h-screen w-16 flex-col border-r border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900">
-        {/* Logo placeholder */}
-        <div className="mx-auto mt-4 h-10 w-10 rounded-lg bg-gray-200 dark:bg-gray-800" />
+        {/* Logo */}
+        <div className="mx-auto mt-4">
+          <Logo />
+        </div>
         
         {/* Main navigation icons */}
         <div className="mt-8 flex flex-col items-center gap-6">
