@@ -1,5 +1,5 @@
-import { Avatar, AvatarImage, AvatarFallback } from "@radix-ui/react-avatar";
-import { Heart, MessageCircle, Share2 } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from '@radix-ui/react-avatar';
+import { Heart, MessageCircle, Share2 } from 'lucide-react';
 
 export default function Post({ name, description, avatarUrl }) {
   return (
@@ -11,9 +11,9 @@ export default function Post({ name, description, avatarUrl }) {
         </Avatar>
         <span className="text-base font-medium">{name}</span>
       </div>
-      
+
       <p className="mb-4 text-gray-700">{description}</p>
-      
+
       <div className="flex gap-4">
         <button className="flex items-center gap-1 text-gray-600 transition-colors hover:text-red-500">
           <Heart className="h-5 w-5" />
@@ -30,4 +30,4 @@ export default function Post({ name, description, avatarUrl }) {
       </div>
     </div>
   );
-} 
+}
