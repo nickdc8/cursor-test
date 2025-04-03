@@ -15,15 +15,15 @@ export default function Post({ name, description, avatarUrl }) {
       <p className="mb-4 text-gray-700">{description}</p>
 
       <div className="flex gap-4">
-        <button className="flex items-center gap-1 text-gray-600 transition-colors hover:text-red-500">
+        <button className="flex cursor-pointer items-center gap-1 text-gray-600 transition-colors hover:text-red-500">
           <Heart className="h-5 w-5" />
           <span>Like</span>
         </button>
-        <button className="flex items-center gap-1 text-gray-600 transition-colors hover:text-blue-500">
+        <button className="flex cursor-pointer items-center gap-1 text-gray-600 transition-colors hover:text-blue-500">
           <MessageCircle className="h-5 w-5" />
           <span>Comment</span>
         </button>
-        <button className="flex items-center gap-1 text-gray-600 transition-colors hover:text-green-500">
+        <button className="flex cursor-pointer items-center gap-1 text-gray-600 transition-colors hover:text-green-500">
           <Share2 className="h-5 w-5" />
           <span>Share</span>
         </button>

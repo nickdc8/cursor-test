@@ -48,30 +48,30 @@ export default function SideNav() {
         
         {/* Main navigation icons */}
         <div className="mt-8 flex flex-col items-center gap-6">
-          <button className="rounded-lg p-2 transition-colors hover:bg-gray-100">
+          <button className="cursor-pointer rounded-lg p-2 transition-colors hover:bg-gray-100">
             <Home className="h-5 w-5" />
           </button>
-          <button className="rounded-lg p-2 transition-colors hover:bg-gray-100">
+          <button className="cursor-pointer rounded-lg p-2 transition-colors hover:bg-gray-100">
             <Search className="h-5 w-5" />
           </button>
-          <button className="rounded-lg p-2 transition-colors hover:bg-gray-100">
+          <button className="cursor-pointer rounded-lg p-2 transition-colors hover:bg-gray-100">
             <Plus className="h-5 w-5" />
           </button>
-          <button className="rounded-lg p-2 transition-colors hover:bg-gray-100">
+          <button className="cursor-pointer rounded-lg p-2 transition-colors hover:bg-gray-100">
             <Heart className="h-5 w-5" />
           </button>
-          <button className="rounded-lg p-2 transition-colors hover:bg-gray-100">
+          <button className="cursor-pointer rounded-lg p-2 transition-colors hover:bg-gray-100">
             <User className="h-5 w-5" />
           </button>
         </div>
 
         {/* Bottom icons */}
         <div className="mt-auto mb-4 flex flex-col items-center gap-4">
-          <button className="rounded-lg p-2 transition-colors hover:bg-gray-100">
+          <button className="cursor-pointer rounded-lg p-2 transition-colors hover:bg-gray-100">
             <Pin className="h-5 w-5" />
           </button>
           <button 
-            className="rounded-lg p-2 transition-colors hover:bg-gray-100"
+            className="cursor-pointer rounded-lg p-2 transition-colors hover:bg-gray-100"
             onClick={() => setIsMenuOpen(true)}
           >
             <Menu className="h-5 w-5" />
@@ -89,7 +89,7 @@ export default function SideNav() {
             {menuItems.map((item, index) => (
               <button
                 key={index}
-                className="flex w-full items-center gap-3 rounded-xl px-4 py-3 text-left text-gray-700 transition-colors hover:bg-gray-50"
+                className="flex w-full cursor-pointer items-center gap-3 rounded-xl px-4 py-3 text-left text-gray-700 transition-colors hover:bg-gray-50"
               >
                 <item.icon className="h-5 w-5" />
                 <span className="font-medium">{item.label}</span>
